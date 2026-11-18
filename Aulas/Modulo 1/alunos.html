@@ -17,7 +17,9 @@
        if ((nota >= notaMinAprov) && (semCursado >= qtdeSemestres)) {
             return "Aprovado";
        }
-       else{
+       else if (nota >= notaMinAprov) {
+            return "Você concluiu o banco de currículos"
+       }else{
             return "Reprovado"
        }
 
