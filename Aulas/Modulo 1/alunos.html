@@ -7,7 +7,10 @@
 </head>
 <body>
     <h1>Alunos</h1>
-    <script>function primeiraEtapa (acertoProva , semCursado) {
+    <script>
+    
+    for (let count = 0 ; count < 10 ; count++){
+    function primeiraEtapa (acertoProva , semCursado) {
        const NumQuestoes = 20
        const notaMinAprov = 0.7
        const qtdeSemestres = 3 
@@ -22,7 +25,7 @@
        }else{
             return "Reprovado"
        }
-
+     }
     }
     
     console.log(primeiraEtapa(16, 3));
