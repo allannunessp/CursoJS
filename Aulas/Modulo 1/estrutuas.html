@@ -1,28 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Estruturas</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Classificacao de Lutadores</h1>
     <script>
-        for(let count = 0 ; count < 2 ; count++){
-         let peso = parseFloat ( prompt("Digite seu peso:"));
+      for (let count = 0; count < 2; count++) {
+        let peso = parseFloat(prompt("Digite seu peso:"));
 
-         if (peso <= 40){
-               alert('Você é peso pena');
-         }
-         if (peso>= 41 && peso <= 60) {
-               alert("Você é peso mosca");
-         }else{
-            alert("Você é peso pesado");
-         }
-         console.log ("No Valor" + count + " foi informado o peso " + peso + "Kg");
-        } 
+        if (peso <= 40) {
+          alert("Você é peso pena");
+        }
+        if (peso >= 41 && peso <= 60) {
+          alert("Você é peso mosca");
+        } else {
+          alert("Você é peso pesado");
+        }
+        console.log(
+          "No Valor" + count + " foi informado o peso " + peso + "Kg",
+        );
+      }
     </script>
-
-
-</body>
+  </body>
 </html>

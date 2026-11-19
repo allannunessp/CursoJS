@@ -1,36 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alunos</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Alunos</h1>
     <script>
-    
-    for (let count = 0 ; count < 10 ; count++){
-    function primeiraEtapa (acertoProva , semCursado) {
-       const NumQuestoes = 20
-       const notaMinAprov = 0.7
-       const qtdeSemestres = 3 
+      for (let count = 0; count < 10; count++) {
+        function primeiraEtapa(acertoProva, semCursado) {
+          const NumQuestoes = 20;
+          const notaMinAprov = 0.7;
+          const qtdeSemestres = 3;
 
-       let nota = acertoProva / NumQuestoes
-       console.log(nota)
-       if ((nota >= notaMinAprov) && (semCursado >= qtdeSemestres)) {
+          let nota = acertoProva / NumQuestoes;
+          console.log(nota);
+          if (nota >= notaMinAprov && semCursado >= qtdeSemestres) {
             return "Aprovado";
-       }
-       else if (nota >= notaMinAprov) {
-            return "Você concluiu o banco de currículos"
-       }else{
-            return "Reprovado"
-       }
-     }
-    }
-    
-    console.log(primeiraEtapa(16, 3));
-    console.log(primeiraEtapa(10, 2));
-    </script>
+          } else if (nota >= notaMinAprov) {
+            return "Você concluiu o banco de currículos";
+          } else {
+            return "Reprovado";
+          }
+        }
+      }
 
-</body>
+      console.log(primeiraEtapa(16, 3));
+      console.log(primeiraEtapa(10, 2));
+    </script>
+  </body>
 </html>
