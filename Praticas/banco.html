@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>banco</title>
+  </head>
+  <body>
+    <h1>BancoJS</h1>
+    <script>
+      //realizar banco com base no realizado e python
+      let saldo = 500.0;
+      let conta = prompt(
+        "Bem vindo ao Banco JS\nInsira seus dados:\n\n Qual sua Conta? ",
+      );
+      while (true) {
+        let opc = prompt(
+          "Qual operação deseja realizar?\n1 - Consultar saldo\n2 - Sacar\n3- depositar\n4 - Sair",
+        );
+        if (opc === "1") {
+          alert(saldo);
+        } else if (opc === "2") {
+          let saque = prompt("Quanto deseja sacar?");
+          saldo = saldo - saque;
+          alert(saldo);
+        } else if (opc === "3") {
+          let deposito = prompt("Qual valor deseja depositar? ");
+          saldo = saldo + deposito;
+          alert(saldo);
+        } else {
+          alert("Obrigado por usar o Banco JS!\nVolte sempre :D");
+          break;
+        }
+      }
+    </script>
+  </body>
+</html>
