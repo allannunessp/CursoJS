@@ -10,6 +10,14 @@
     <script>
       //realizar banco com base no realizado e python
       let saldo = 500.0;
+
+      function soma(n1, n2) {
+        return n1 + n2;
+      }
+      function subtra(n1, n2) {
+        return n1 - n2;
+      }
+
       let conta = prompt(
         "Bem vindo ao Banco JS\nInsira seus dados:\n\n Qual sua Conta? ",
       );
@@ -21,11 +29,11 @@
           alert("R$" + saldo);
         } else if (opc === "2") {
           let saque = parseFloat(prompt("Quanto deseja sacar?"));
-          saldo = saldo - saque;
+          saldo = subtra(saldo, saque);
           alert("R$" + saldo);
         } else if (opc === "3") {
           let deposito = parseFloat(prompt("Qual valor deseja depositar? "));
-          saldo = saldo + deposito;
+          saldo = soma(saldo, deposito);
           alert("R$" + saldo);
         } else {
           alert("Obrigado por usar o Banco JS!\nVolte sempre :D");
