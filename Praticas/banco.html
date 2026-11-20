@@ -18,15 +18,15 @@
           "Qual operação deseja realizar?\n1 - Consultar saldo\n2 - Sacar\n3- depositar\n4 - Sair",
         );
         if (opc === "1") {
-          alert(saldo);
+          alert("R$" + saldo);
         } else if (opc === "2") {
-          let saque = prompt("Quanto deseja sacar?");
+          let saque = parseFloat(prompt("Quanto deseja sacar?"));
           saldo = saldo - saque;
-          alert(saldo);
+          alert("R$" + saldo);
         } else if (opc === "3") {
-          let deposito = prompt("Qual valor deseja depositar? ");
+          let deposito = parseFloat(prompt("Qual valor deseja depositar? "));
           saldo = saldo + deposito;
-          alert(saldo);
+          alert("R$" + saldo);
         } else {
           alert("Obrigado por usar o Banco JS!\nVolte sempre :D");
           break;
