@@ -21,8 +21,21 @@ function criaLista() {
     "<tr><th>Nome Usuario</th><th>Ações</th></tr>");
 
   for (let i = 0; i <= dadosLista.length - 1; i++) {
-    tabela += "<tr><td>" + dadosLista[i] + "</td></tr>";
+    tabela +=
+      "<tr><td>" +
+      dadosLista[i] +
+      "</td><td><button>Editar</button> <button onclick='excluir(" +
+      i +
+      ")'>Excluir</button></td></tr>";
   }
 
   document.getElementById("tabela").innerHTML = tabela;
+}
+
+function excluir(i) {
+  dadosLista.splice(i, 1);
+
+  criaLista();
+
+  console.log(dadosLista);
 }
